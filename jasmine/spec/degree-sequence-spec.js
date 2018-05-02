@@ -3,12 +3,16 @@ describe('isDegreeSequence', () => {
     expect(isDegreeSequence).toEqual(jasmine.any(Function));
   });
 
-  it('should return false when argument is not an array', () => {
-    expect(isDegreeSequence()).toBe(false);
+  describe('when argument is not an array', () => {
+    it('should return false', () => {
+      expect(isDegreeSequence()).toBe(false);
+    })
   });
 
-  it('should return false when argument empty', () => {
-    expect(isDegreeSequence([])).toBe(false);
+  describe('when argument is empty', () => {
+    it('should return false', () => {
+      expect(isDegreeSequence([])).toBe(false);
+    })
   });
 
 });
